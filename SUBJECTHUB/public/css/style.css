@@ -1,0 +1,93 @@
+/*
+    SUBJECTHUB - Custom Stylesheet
+    --------------------------------
+    Color Palette:
+    - Primary: #4a90e2 (Calm Blue)
+    - Secondary: #f5f7fa (Light Gray Background)
+    - Accent: #50e3c2 (Turquoise Green)
+    - Text: #333333
+    - Muted Text: #888888
+    - Borders: #e8e8e8
+*/
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #333333;
+    line-height: 1.6;
+    position: relative;
+    background-color: #f5f7fa; /* Fallback color */
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../assets/background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: blur(8px) brightness(0.9);
+    z-index: -1;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 600;
+}
+
+.navbar {
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.btn-primary {
+    background-color: #4a90e2;
+    border-color: #4a90e2;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #357abd;
+    border-color: #357abd;
+}
+
+.btn-accent {
+    background-color: #50e3c2;
+    border-color: #50e3c2;
+    color: #ffffff;
+    transition: background-color 0.3s ease;
+}
+
+.btn-accent:hover {
+    background-color: #43cba7;
+    border-color: #43cba7;
+}
+
+/* Card Styles with Soft Shadow */
+.card {
+    border: 1px solid #e8e8e8;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* Glassmorphism Effect Example */
+.glass-effect {
+    background: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Background Gradient Example */
+.bg-gradient-soft {
+    background: linear-gradient(to right, #f5f7fa, #e8f0f7);
+}
